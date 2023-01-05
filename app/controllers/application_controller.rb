@@ -6,21 +6,28 @@ class ApplicationController < Sinatra::Base
     foods = Food.all 
     foods.to_json
   end
-  post '/foods'do
-   food = Food.create(
-    body: params[:body],
-    username: params[:username]
+
+  get '/reviews' do 
+    reviews = Review.all 
+    reviews.to_json
+  end
+
+  post '/reviews'do
+   reviews = Review.create(
+    name: params[:name],
+    description: params[:rating]
    )
    message.to_json
   end
-  patch '/foods/:id' do
-    food = Food.find(params[:id])
-    food.update( body: params[:body] )
-    food.to_json
+
+  patch '/reviews/:id' do
+    review = Review.find(params[:id])
+    review.update( body: params[:body] )
+    review.to_json
   end
-  delete '/foods/:id' do 
-    food = Food.find(params[:id])
-    food.destroy
-    food.to_json
+  delete '/reviews/:id' do 
+    review = Review.find(params[:id])
+    review.destroy
+    review.to_json
   end
 end
