@@ -1,6 +1,6 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
-  
+  require 'pry'
   # Add routes
   get '/foods' do 
     foods = Food.all 
@@ -15,9 +15,11 @@ class ApplicationController < Sinatra::Base
   post '/reviews'do
    reviews = Review.create(
     name: params[:name],
-    description: params[:rating]
+    description: params[:description],
+    rating: params[:rating]
    )
    message.to_json
+   binding.pry
   end
 
   patch '/reviews/:id' do
