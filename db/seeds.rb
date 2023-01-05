@@ -19,17 +19,17 @@ m12=Food.create(name: "Vegan Asian Sesame Noodles", img_url: "https://christieat
 
 
 
-r1=Review.create(name: "Jeremy Renner", description: "not bad if im being honest", rating: 10, menu_item_id: m1.id)
+r1=Review.create(name: "Jeremy Renner", description: "Not bad if im being honest", rating: 10, menu_item_id: m1.id)
 r2=Review.create(name: "William German", description: "Could use more msg", rating: 5, menu_item_id: m2.id)
 r3=Review.create(name: "Keith Ma", description: "it is so creamy!", rating: 9, menu_item_id: m3.id)
 r4=Review.create(name: "Jason Tran", description: "not spicy enough", rating: 6, menu_item_id: m4.id)
-r5=Review.create(name: "Morgan VanYperan", description: "garlic could be a bit more fresh", rating: 4, menu_item_id: m5.id)
+r5=Review.create(name: "Morgan VanYperen", description: "garlic could be a bit more fresh", rating: 4, menu_item_id: m5.id)
 r6=Review.create(name: "Ian", description: "the burrito taste like crack", rating: 9, menu_item_id: m6.id)
 r7=Review.create(name: "John Josef", description: "tacos tasted like home", rating: 10, menu_item_id: m7.id)
-r8=Review.create(name: "Harinder Signh", description: "the bread was juicy and fresh", rating: 6, menu_item_id: m8.id)
+r8=Review.create(name: "Harinder Singh", description: "the bread was juicy and fresh", rating: 6, menu_item_id: m8.id)
 r9=Review.create(name: "Robert Lee", description: "egg still raw and undercooked", rating: 2, menu_item_id: m9.id)
 r10=Review.create(name: "Olivia Rodrigo", description: "banh mi was homemade and fresh", rating: 10, menu_item_id: m10.id)
-r11=Review.create(name: "Adrian Baba", description: "not bad if im being honest", rating: 10, menu_item_id: m11.id)
+r11=Review.create(name: "Adrian Barba", description: "not bad if im being honest", rating: 10, menu_item_id: m11.id)
 r12=Review.create(name: "Kang Dynasty", description: "very good for a vegan dish", rating: 7, menu_item_id: m12.id)
 
 
