@@ -22,11 +22,10 @@ class ApplicationController < Sinatra::Base
 
   patch '/reviews/:id' do
     review = Review.find(params[:id])
-    review.update( body: params[:body] )
+    review.update( name: params[:name], description: params[:description], rating: params[:rating] )
     review.to_json
   end
 
-  
   delete '/reviews/:id' do 
     review = Review.find(params[:id])
     review.destroy
